@@ -1,0 +1,32 @@
+#!/bin/bash
+#PBS -N manbrot_sym
+#PBS -q fast
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=03:00:00
+#PBS -l pmem=8000mb
+#PBS -e manbrot_test.stderr
+#PBS -o manbrot_test.stdout
+
+
+cd ~/project1b
+gcc -fopenmp -o manbrot mandelbrot.c -DDYNAMIC
+
+export OMP_NUM_THREADS=1
+echo " "
+echo "thread = 1"
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+
+export OMP_NUM_THREADS=2
+echo " "
+echo "thread = 2"
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000
+./manbrot 1000

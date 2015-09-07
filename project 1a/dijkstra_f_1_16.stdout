@@ -1,0 +1,86 @@
+ 
+vertices = 10
+elapsed time: 0.002242
+elapsed time: 0.002236
+elapsed time: 0.002310
+elapsed time: 0.002255
+elapsed time: 0.002216
+elapsed time: 0.002212
+elapsed time: 0.002214
+elapsed time: 0.002176
+elapsed time: 0.002241
+elapsed time: 0.002277
+ 
+vertices = 100
+elapsed time: 0.018091
+elapsed time: 0.018445
+elapsed time: 0.018224
+elapsed time: 0.018230
+elapsed time: 0.018242
+elapsed time: 0.018554
+elapsed time: 0.018122
+elapsed time: 0.018151
+elapsed time: 0.018445
+elapsed time: 0.018256
+ 
+vertices = 1000
+elapsed time: 0.190682
+elapsed time: 0.191567
+elapsed time: 0.189647
+elapsed time: 0.190803
+elapsed time: 0.187874
+elapsed time: 0.192225
+elapsed time: 0.191595
+elapsed time: 0.193377
+elapsed time: 0.190188
+elapsed time: 0.190420
+ 
+vertices = 10000
+elapsed time: 3.541159
+elapsed time: 3.533368
+elapsed time: 3.592359
+elapsed time: 3.546982
+elapsed time: 3.543093
+elapsed time: 3.542335
+elapsed time: 3.544592
+elapsed time: 3.537883
+elapsed time: 3.529495
+elapsed time: 3.544709
+ 
+vertices = 20000
+elapsed time: 10.716182
+elapsed time: 10.709403
+elapsed time: 10.711998
+elapsed time: 10.669583
+elapsed time: 10.701786
+elapsed time: 10.698967
+elapsed time: 10.673337
+elapsed time: 10.681166
+elapsed time: 10.711378
+elapsed time: 10.723098
+ 
+vertices = 30000
+elapsed time: 21.685873
+elapsed time: 21.593428
+elapsed time: 21.590397
+elapsed time: 21.575326
+elapsed time: 21.522416
+elapsed time: 21.612189
+elapsed time: 21.594784
+elapsed time: 21.617066
+elapsed time: 21.613486
+elapsed time: 21.692586
+ 
+vertices = 40000
+elapsed time: 35.778618
+elapsed time: 35.937933
+elapsed time: 35.824462
+elapsed time: 36.398541
+elapsed time: 35.986625
+elapsed time: 35.960755
+elapsed time: 36.032746
+elapsed time: 35.863510
+elapsed time: 36.002440
+elapsed time: 35.933624
+ 
+vertices = 50000
