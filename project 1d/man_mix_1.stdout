@@ -1,0 +1,145 @@
+ 
+size = 1024, STATIC
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.386251
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.401929
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.297207
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.435585
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.384698
+size = 1024, DYNAMIC
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.389698
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.386102
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.388479
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.386173
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.387083
+size = 1024, GUIDED
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.390361
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.387709
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.385344
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.385984
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+My range is 0 1023 
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.380788
+size = 1024, RC
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+Using 1 threads
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.290766
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+Using 1 threads
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.293839
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+Using 1 threads
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.291473
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+Using 1 threads
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.387711
+Query thread level= 0  Init_thread level= 0
+Defined LEVEL= 3  (ompi_info | grep -i thread) 
+Using 1 threads
+My rank is 0 has 1024:
+99137
+Random chunk RC is defined
+3.389833

@@ -1,0 +1,97 @@
+#!/bin/bash
+#PBS -N man_mix_sym
+#PBS -q parallel
+#PBS -l nodes=4:ppn=4
+#PBS -l walltime=01:00:00
+#PBS -l pmem=8000mb
+#PBS -e man_mix_4_4.stderr
+#PBS -o man_mix_4_4.stdout
+
+cd ~/project1d
+mpicc -fopenmp -o man_mixS mandelbrot_mpi.c -lrt -DSTATIC
+mpicc -fopenmp -o man_mixD mandelbrot_mpi.c -lrt -DDYNAMIC
+mpicc -fopenmp -o man_mixG mandelbrot_mpi.c -lrt -DGUIDED
+mpicc -fopenmp -o man_mixR mandelbrot_mpi.c -lrt -DRC
+
+export MPI_PROCS=16
+export OMP_NUM_THREADS=16
+
+echo "size = 512, STATIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixS 512 0
+}
+
+echo "size = 1024, STATIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixS 1024 0
+}
+
+echo "size = 2048, STATIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixS 2048 0
+}
+
+echo "size = 4096, STATIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixS 4096 0
+}
+
+echo "size = 512, DYNAMIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixD 512 0
+}
+
+echo "size = 1024, DYNAMIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixD 1024 0
+}
+
+echo "size = 2048, DYNAMIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixD 2048 0
+}
+
+echo "size = 4096, DYNAMIC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixD 4096 0
+}
+
+echo "size = 512, GUIDED"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixG 512 0
+}
+
+echo "size = 1024, GUIDED"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixG 1024 0
+}
+
+echo "size = 2048, GUIDED"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixG 2048 0
+}
+
+echo "size = 4096, GUIDED"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixG 4096 0
+}
+
+echo "size = 512, RC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixR 512 0
+}
+
+echo "size = 1024, RC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixR 1024 0
+}
+
+echo "size = 2048, RC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixR 2048 0
+}
+
+echo "size = 4096, RC"
+for((i=0;i<10;i++)) {
+	mpiexec -np $MPI_PROCS -x $OMP_NUM_THREADS ./man_mixR 4096 0
+}

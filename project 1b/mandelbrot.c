@@ -1,3 +1,4 @@
+
 //compile with -D, e.g
 //
 // gcc -fopenmp -o manbrot mandlebrot.c -DDYNAMIC
